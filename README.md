@@ -30,7 +30,7 @@ The database settings live in a separate file outside of the public web director
 
 So, to use my setup you'll have something like this:
 
-`
+```
 config/               -- config directory  
     local-config.php  -- the local database connection settings  
 web_directory/        -- the web root (typically, public_html, www, etc.)  
@@ -38,7 +38,7 @@ web_directory/        -- the web root (typically, public_html, www, etc.)
 	wp-admin/  
     wp-config.php     -- the main config file  
     more WP files     -- the rest of the WordPress install  
-`
+```
 
 The script is set up to look for one of the following:  
  * `local-config.php`       -- for local development  
