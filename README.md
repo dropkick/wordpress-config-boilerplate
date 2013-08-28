@@ -4,11 +4,11 @@ This is what I start with for my wp-config.php file setup in [WordPress](http://
 Props to [Mark Jaquith](https://github.com/markjaquith) and [Ashfame](https://github.com/ashfame) for big chunks of this bizniss.
 
 ## Why
-Overall we tighten up the file and make comment a little more succint. We also pull database connection settings out of `wp-config.php` and the public web directory. On the (hopefully) rare occasion that the web server serves php files as plain text, our database settings aren't exposed. That's nice.
+Overall we tighten up the file and make comments a little more succint. We also pull database connection settings out of `wp-config.php` and the public web directory. On the (hopefully) rare occasion that the web server serves php files as plain text, our database settings aren't exposed. That's nice.
 
 Making the database settings more modular also allows us to have environment-specific settings (local, dev, staging, and production) without worrying about changes to the rest of the config file staying in sync. 
 
-Once nice advantage is that you you can track `wp-config.php` in a git repositiory and not worry about changing settings on each environment you deploy to. 
+A nice advantage is that you you can track `wp-config.php` in a git repositiory and not worry about changing settings on each environment you deploy to. 
 
 If you find this useful and make improvements, feel free to contribute. 
 
