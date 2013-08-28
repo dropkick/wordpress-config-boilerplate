@@ -26,7 +26,7 @@ A few things are happening:
 
 `wp-config.php` lives where it usually would. In the root of your WordPress installation.
 
-The database settings live in a separate file outside of the public web directory. I use a separate directory named `config` one level above the web root. If you need/want it somewhere else, you'll need to update the path in `wp-config.php`. (It's the DB_`CREDENTIALS_PATH` constant.)
+The database settings live in a separate file outside of the public web directory. I use a separate directory named `config` one level above the web root. If you need/want it somewhere else, you'll need to update the path in `wp-config.php`. (It's the `DB_CREDENTIALS_PATH` constant.)
 
 So, to use my setup you'll have something like this:
 
