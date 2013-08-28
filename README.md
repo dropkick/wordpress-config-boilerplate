@@ -48,4 +48,7 @@ The script is set up to look for one of the following:
 
 **Note:** It's simplest if you only have one of these present in a given environment. I have my git repositories ignore  all of these and track `wp-config.php`. 
 
-Of course, you'll want to set your own unique keys and salts. There are also a few other things that are commented out which may or may not be useful for you you circumstances. I use them often enough to included in my boilerplate.
+### Don‘t forget
+You'll want to set your own unique keys and salts. 
+
+There are also a few other things that are commented out which may or may not be useful for your circumstances. I use them often enough to be included in my boilerplate.
