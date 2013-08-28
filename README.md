@@ -31,20 +31,20 @@ The database settings live in a separate file outside of the public web director
 So, to use my setup you'll have something like this:
 
 `
-config/               -- config directory
-    local-config.php  -- the local database connection settings
-web_directory/        -- the web root (typically, public_html, www, etc.)
-	index.php         -- WordPress index file
-	wp-admin/
-    wp-config.php     -- the main config file
-    more WP files     -- the rest of the WordPress install
+config/               -- config directory  
+    local-config.php  -- the local database connection settings  
+web_directory/        -- the web root (typically, public_html, www, etc.)  
+	index.php         -- WordPress index file  
+	wp-admin/  
+    wp-config.php     -- the main config file  
+    more WP files     -- the rest of the WordPress install  
 `
 
-The script is set up to look for one of the following:
- * `local-config.php`       -- for local development
- * `dev-config.php`         -- another dev environment, typically not local
- * `staging-config.php`     -- staging environment
- * `production-config.php`  -- the production environment
+The script is set up to look for one of the following:  
+ * `local-config.php`       -- for local development  
+ * `dev-config.php`         -- another dev environment, typically not local   
+ * `staging-config.php`     -- staging environment  
+ * `production-config.php`  -- the production environment  
 
 **Note:** It's simplest if you only have one of these present in a given environment. I have my git repositories ignore  all of these and track `wp-config.php`. 
 
