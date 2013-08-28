@@ -12,7 +12,7 @@ Once nice advantage is that you you can track `wp-config.php` in a git repositio
 
 If you find this useful and make improvements, feel free to contribute. 
 
-### What’s happening here?
+## What’s happening here?
 
 We'll be loading database connection parameters into `wp-config.php` that‘s based on a method I learned about from [Mark Jaquith](https://github.com/markjaquith).
 
@@ -22,7 +22,7 @@ A few things are happening:
 2. Next, we load the database connection info itself. Well...to connect to the database.
 3. Lastly, depending on which environment is set, we control debug mode and bug logging. More debugging and logging in local and dev, less in staging, none in production.
 
-### Setup
+## Setup
 
 `wp-config.php` lives where it usually would. In the root of your WordPress installation.
 
