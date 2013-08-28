@@ -18,11 +18,9 @@ We'll be loading database connection parameters into `wp-config.php` that‘s ba
 
 A few things are happening:
 
-	1. Based on whether or not files with particular names exist, `wp-config.php` sets a constant stating which environment we're using. We'll use this in conditionals farther down.
-
-	2. Next, we load the database connection info itself. Well...to connect to the database.
-
-	3. Lastly, depending on which environment is set, we control debug mode and bug logging. More debugging and logging in local and dev, less in staging, none in production.
+1. Based on whether or not files with particular names exist, `wp-config.php` sets a constant stating which environment we're using. We'll use this in conditionals farther down.
+2. Next, we load the database connection info itself. Well...to connect to the database.
+3. Lastly, depending on which environment is set, we control debug mode and bug logging. More debugging and logging in local and dev, less in staging, none in production.
 
 ### Setup
 
@@ -48,6 +46,6 @@ The script is set up to look for one of the following:
  * `staging-config.php`     -- staging environment
  * `production-config.php`  -- the production environment
 
-Note: It's simplest if you only have one of these present in a given environment. I have my git repositories ignore  all of these and track `wp-config.php`. 
+**Note:** It's simplest if you only have one of these present in a given environment. I have my git repositories ignore  all of these and track `wp-config.php`. 
 
 Of course, you'll want to set your own unique keys and salts. There are also a few other things that are commented out which may or may not be useful for you you circumstances. I use them often enough to included in my boilerplate.
